@@ -1,5 +1,5 @@
-FROM node:8.4-alpine
-RUN apk --no-cache add python python3==3.6.1-r3 python3-dev==3.6.1-r3 py-pip ca-certificates groff less bash make jq curl wget g++ zip git openssh && \
+FROM node:6.10-alpine
+RUN apk --no-cache add python py-pip groff less bash make jq curl wget g++ zip git openssh&& \
     pip --no-cache-dir install awscli && \
     update-ca-certificates
 
